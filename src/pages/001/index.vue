@@ -34,7 +34,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div h-full w-full flex items-center justify-center @mousedown="onMove" @touchstart="onMove">
+  <div h-full w-full flex cursor-pointer items-center justify-center @mousedown="onMove" @touchstart="onMove">
     <div ref="el" class="box" style="transform: rotateX(-40deg) rotateY(40deg);">
       <div class="item top">
         1

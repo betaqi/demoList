@@ -86,8 +86,10 @@ onMounted(() => {
 
 <template>
   <div h-full w-full flex flex-col items-center justify-center>
-    <input v-model="fillColor" type="color">
-    <canvas ref="el" style="background-color: #fff5;" :width="CanvasWidth" :height="CanvasHeight" @mousedown="mouseDown" />
+    <div flex items-center pb3>
+      绘制颜色选择<input v-model="fillColor" type="color">
+    </div>
+    <canvas ref="el" cursor-pointer style="background-color: #fff5;" :width="CanvasWidth" :height="CanvasHeight" @mousedown="mouseDown" />
   </div>
 </template>
 

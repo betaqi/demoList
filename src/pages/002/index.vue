@@ -90,13 +90,22 @@ function startFrame() {
   })
 }
 
+// 从新绘制
+function redraw() {
+  ctx.value.clearRect(0, 0, rect.width, rect.height)
+  init()
+}
+
 onMounted(() => {
   init()
 })
 </script>
 
 <template>
-  <div h-full w-full flex items-center justify-center>
+  <div h-full w-full flex flex-col items-center justify-center>
+    <button btn @click="redraw">
+      重新绘制
+    </button>
     <canvas ref="el" border :width="rect.width" :height="rect.height" />
   </div>
 </template>
