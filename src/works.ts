@@ -5,6 +5,9 @@ export const info = [
   {
     name: 'tree生长',
   },
+  {
+    name: 'canvas draw',
+  },
 ]
 
 export const works = info.map((info, idx) => {
