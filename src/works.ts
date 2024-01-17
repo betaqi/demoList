@@ -6,7 +6,10 @@ export const info = [
     name: 'tree生长',
   },
   {
-    name: 'canvas draw',
+    name: 'edit canvas',
+  },
+  {
+    name: '漩涡二维数组',
   },
 ]
 
