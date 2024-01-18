@@ -6,8 +6,11 @@ const fillColor = ref()
 const el = ref()
 
 const ctx = $computed(() => el.value.getContext('2d'))
-const CanvasWidth = $computed(() => window.innerWidth * 0.8)
-const CanvasHeight = $computed(() => window.innerHeight * 0.9)
+
+const windowWidth = ref(0)
+const windowHeight = ref(0)
+const CanvasWidth = $computed(() => windowWidth.value * 0.8)
+const CanvasHeight = $computed(() => windowWidth.value * 0.9)
 const shapes = []
 
 function mouseDown(e) {
@@ -80,6 +83,8 @@ function OnMouseUp() {
 }
 
 onMounted(() => {
+  windowWidth.value = window.innerWidth
+  windowHeight.value = window.innerHeight
   draw()
 })
 </script>
