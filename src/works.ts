@@ -11,6 +11,9 @@ export const info = [
   {
     name: '漩涡二维数组',
   },
+  {
+    name: 'webpack动画',
+  },
 ]
 
 export const works = info.map((info, idx) => {
