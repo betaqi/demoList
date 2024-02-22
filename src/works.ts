@@ -14,6 +14,15 @@ export const info = [
   {
     name: 'webpack动画',
   },
+  {
+    name: 'three.js起步',
+  },
+  {
+    name: 'three line',
+  },
+  {
+    name: 'vueUSe hook',
+  },
 ]
 
 export const works = info.map((info, idx) => {
